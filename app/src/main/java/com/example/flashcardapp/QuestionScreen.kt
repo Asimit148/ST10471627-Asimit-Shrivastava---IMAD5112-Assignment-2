@@ -56,8 +56,36 @@ class QuestionScreen : AppCompatActivity() {
 
                 //Close this activity so the user can't come back using the back button.
                 finish()
+
+
+
             }
         }
 
+        // Function to check if the user's answer is correct.
+
+        fun checkAnswer(userAnswer: Boolean) {
+            if (userAnswer == answers[index]) {
+                feedbackTextView.text = "correct"
+                score++ // Increases the score if the answer is correct
+            } else {
+                feedbackTextView.text = "incorrect"
+            }
+        }
+        // Listener for the true button.
+        trueButton.setOnClickListener {
+            checkAnswer(true) // Check if 'True' is the correct answer.
+        }
+        // Listener for the false button.
+        falseButton.setOnClickListener {
+            checkAnswer(false) // Check if 'False' is the correct answer.
+        }
+        // Listener for the next button.
+        nextButton.setOnClickListener {
+            index++ // Move to the next question.
+            displayQuestion() // Display the next question.
+        // Display the first question immediately when the screen loads.
+        displayQuestion()
+        }
     }
 }
