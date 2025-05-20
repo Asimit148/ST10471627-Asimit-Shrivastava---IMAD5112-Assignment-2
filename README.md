@@ -17,14 +17,16 @@ While designing the app, I put a lot of thought into how it would look and feel.
 ### 1. Welcome Screen (MainActivity)
 - Shows a greeting message and short description.
 - Features a Start button that begins the quiz.
-- Designed with clean text, central alignment, and strong colour contrast to welcome users.
+- Designed with clean text, central alignment, and strong colour contrast to welcome users.![image](https://github.com/user-attachments/assets/610d1889-615c-4c6c-9933-40954356625c)
+
 
 ### 2. Question Screen (QuestionScreen)
 - Displays one history question at a time in a flashcard format.
 - Users choose between True and False.
 - After selecting, a short message appears: "Correct!" or "Incorrect!"
 - A Next button moves to the next question.
-- Prevents multiple answers for the same question.
+- Prevents multiple answers for the same question.![image](https://github.com/user-attachments/assets/ceb40cbe-192b-4a36-a5b3-ef80bc15b7c7)
+
 
 ### 3. Score Screen (ScoreScreen)
 - At the end of the quiz, users see their final score out of 5.
@@ -32,7 +34,8 @@ While designing the app, I put a lot of thought into how it would look and feel.
 - Offers three options:
   - Review all questions with correct answers.
   - Exit the app.
-- Score is capped to prevent it from exceeding 5, even with bugs.
+- Score is capped to prevent it from exceeding 5, even with bugs. ![image](https://github.com/user-attachments/assets/8206f42a-4841-475d-aad9-47591bb5810f)
+
 
 ---
 
@@ -41,6 +44,9 @@ While designing the app, I put a lot of thought into how it would look and feel.
 The app uses two arrays in Kotlin:
 - One stores the questions (strings)
 - The other stores the correct answers (true or false)
+
+  ![image](https://github.com/user-attachments/assets/dfc0452e-5717-42d9-89c0-932b9f0b9330)
+
 
 When a user taps a button, the app checks their answer against the correct one. If they answer correctly on their first try, their score increases by 1. The score is saved and shown at the end. The user can’t press True or False more than once for each question, so the score remains accurate.
 
@@ -57,6 +63,8 @@ To prevent crashes and bugs:
 - ConstraintLayout – for flexible, responsive UI layouts.
 - GitHub – version control and source code management.
 - GitHub Actions – automation for building and testing the app.
+![image](https://github.com/user-attachments/assets/638a13ec-f6f9-41a1-9b42-b7a1eee8b278) ![image](https://github.com/user-attachments/assets/2bf7b5be-f392-49fd-9301-82bba60face9)
+
 
 ---
 
